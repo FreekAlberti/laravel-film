@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('film.index');
-});
+Route::get("/", "FilmController@index");
 
 Route::resource("film", "FilmController");
 
